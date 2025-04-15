@@ -1,0 +1,198 @@
+/* Reset dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #87CEEB, #4682B4); /* Gradasi biru muda ke biru tua */
+    color: #333;
+    animation: fadeInBackground 2s ease-in-out;
+}
+
+/* Animasi latar belakang */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Bagian Pengenalan */
+.pengenalan {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.pengenalan h1 {
+    color: #2c3e50;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.pengenalan p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Bagian Keahlian */
+.keahlian {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.keahlian h2 {
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    color: #2c3e50;
+}
+
+.keahlian ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.keahlian li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Footer dengan efek bergelombang */
+footer {
+    position: relative;
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    overflow: hidden;
+    box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.2); /* Bayangan di atas footer */
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+footer .icon-container {
+    margin-top: 20px;
+}
+
+footer .icon {
+    width: 40px;
+    margin: 0 15px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+footer .icon:hover {
+    transform: scale(1.2);
+}
+
+/* Efek gelombang */
+footer .wave-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+footer .wave-container svg {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Animasi */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsivitas */
+
+/* Untuk layar kecil (ponsel) */
+@media (max-width: 768px) {
+    .pengenalan, .keahlian {
+        padding: 30px 15px;
+        margin: 10px auto;
+        max-width: 90%;
+    }
+
+    .pengenalan h1 {
+        font-size: 2em;
+    }
+
+    .pengenalan p, .keahlian li {
+        font-size: 1em;
+    }
+
+    .keahlian h2 {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    footer .icon {
+        width: 30px;
+        margin: 0 10px;
+    }
+}
+
+/* Untuk layar sangat kecil (ponsel kecil) */
+@media (max-width: 480px) {
+    .pengenalan h1 {
+        font-size: 1.8em;
+    }
+
+    .keahlian h2 {
+        font-size: 1.5em;
+    }
+
+    .pengenalan p, .keahlian li {
+        font-size: 0.9em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    footer .icon {
+        width: 25px;
+    }
+}
